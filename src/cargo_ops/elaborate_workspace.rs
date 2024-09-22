@@ -97,6 +97,7 @@ impl<'ela> ElaborateWorkspace<'ela> {
             &specs,
             HasDevUnits::Yes,
             ForceAllTargets::Yes,
+            true,
         )?;
         let packages = ws_resolve.pkg_set;
         let resolve = ws_resolve
